@@ -2,14 +2,16 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
+  const [showLogo, setShowLogo] = useState(false);
   const [showLinks, setShowLinks] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Hide links after first screen
       if (window.scrollY > window.innerHeight - 100) {
+        setShowLogo(true);
         setShowLinks(false);
       } else {
+        setShowLogo(false);
         setShowLinks(true);
       }
     };
@@ -38,19 +40,22 @@ export default function Navbar() {
         zIndex: 9999,
       }}
     >
-      {/* LOGO ALWAYS VISIBLE */}
-      <div
+      {/* LOGO (only after scroll) */}
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: showLogo ? 1 : 0 }}
+        transition={{ duration: 0.4 }}
         style={{
           fontFamily: "Cinzel Decorative, serif",
-          fontSize: "22px",
-          letterSpacing: "2px",
+          fontSize: "28px",
+          letterSpacing: "3px",
           color: "white",
         }}
       >
-        Aman Kataria
-      </div>
+        A
+      </motion.div>
 
-      {/* LINKS ONLY ON HERO */}
+      {/* LINKS (only on first screen) */}
       {showLinks && (
         <div style={{ display: "flex", gap: "20px" }}>
           <a href="#about" style={linkStyle}>About</a>
