@@ -180,4 +180,10 @@ img {
   .hero-section {
     padding-top: 10px !important;
   }
+}/* MOBILE HERO POSITION FIX */
+@media (max-width: 768px) {
+  .hero-section {
+    align-items: flex-start !important;
+    padding-top: 70px !important;
+  }
 }
