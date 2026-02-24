@@ -28,8 +28,8 @@ export default function Navbar() {
       style={{
   position: "fixed",
   top: 0,
-  left: 0,gap: "20px",
-    marginRight: "10px",
+  left: 0, gap: "18px",
+    paddingRight: "10px",
   width: "100%",
   height: "80px",   // restore desktop height
   display: "flex",
