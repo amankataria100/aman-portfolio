@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "0 10%",
-        boxSizing: "border-box",
-      }}
-    >
+  style={{
+    minHeight: "100vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "140px 10% 0 10%",  // 👈 THIS FIXES IT
+    boxSizing: "border-box",
+  }}
+>
       <div
         style={{
           maxWidth: "1300px",
