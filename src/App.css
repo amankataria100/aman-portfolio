@@ -94,7 +94,7 @@ nav a:hover {
 
 /* ===== GENERAL SECTIONS ===== */
 section {
-  padding: 120px 10%;
+  padding: 80px 10%;
   min-height: 100vh;
   scroll-margin-top: 100px;
 }
