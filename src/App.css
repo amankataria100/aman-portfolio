@@ -188,4 +188,17 @@ img {
   .hero-section {
     padding-top: 10px !important;
   }
+}/* ===== DESKTOP HERO ===== */
+.hero-section {
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== MOBILE HERO ===== */
+@media (max-width: 768px) {
+  .hero-section {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
 }

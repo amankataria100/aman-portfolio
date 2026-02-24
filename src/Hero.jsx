@@ -7,8 +7,7 @@ export default function Hero() {
   style={{
     minHeight: "100vh",
     display: "flex",
-    alignItems: "flex-start",   // 👈 CHANGE THIS
-    justifyContent: "flex-start", // 👈 CHANGE THIS
+
     padding: "120px 10% 40px 10%",
     boxSizing: "border-box",
   }}
