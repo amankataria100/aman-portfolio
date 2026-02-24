@@ -26,19 +26,19 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
       style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "60px",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "0 20px",
-        background: "rgba(15,23,42,0.95)",
-        backdropFilter: "blur(10px)",
-        zIndex: 9999,
-      }}
+  position: "fixed",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "80px",   // restore desktop height
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  padding: "0 40px",  // restore desktop padding
+  background: "rgba(15,23,42,0.95)",
+  backdropFilter: "blur(10px)",
+  zIndex: 9999,
+}}
     >
       {/* LOGO (only after scroll) */}
       <motion.div
@@ -47,7 +47,7 @@ export default function Navbar() {
         transition={{ duration: 0.4 }}
         style={{
           fontFamily: "Cinzel Decorative, serif",
-          fontSize: "22px",
+          fontSize: "28px",
           letterSpacing: "3px",
           color: "white",
         }}
@@ -71,5 +71,5 @@ Aman
 const linkStyle = {
   color: "white",
   textDecoration: "none",
-  fontSize: "12px",
+  fontSize: "14px",
 };

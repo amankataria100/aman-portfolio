@@ -155,4 +155,24 @@ img {
   section {
     padding: 90px 20px;
   }
+}/* ===== MOBILE NAVBAR ONLY ===== */
+@media (max-width: 768px) {
+
+  nav {
+    height: 60px !important;
+    padding: 0 20px !important;
+  }
+
+  nav div:first-child {
+    font-size: 20px !important;
+  }
+
+  nav a {
+    font-size: 12px !important;
+  }
+
+}@media (max-width: 768px) {
+  section:first-of-type {
+    padding-top: 100px !important;
+  }
 }

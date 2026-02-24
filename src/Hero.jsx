@@ -8,7 +8,7 @@ export default function Hero() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "120px 10% 20px 10%", // Fixed navbar overlap
+        padding: "140px 10% 40px 10%", // Fixed navbar overlap
         boxSizing: "border-box",
       }}
     >
