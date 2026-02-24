@@ -175,15 +175,17 @@ img {
   section:first-of-type {
     padding-top: 100px !important;
   }
-}/* MOBILE HERO GAP FIX */
-@media (max-width: 768px) {
+}/* Desktop Hero Centered */
+@media (min-width: 769px) {
   .hero-section {
-    padding-top: 10px !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
-}/* MOBILE HERO POSITION FIX */
+}
+
+/* Mobile Hero Top Aligned */
 @media (max-width: 768px) {
   .hero-section {
-    align-items: flex-start !important;
-    padding-top: 10px !important;
+    padding-top: 60px !important;
   }
 }
