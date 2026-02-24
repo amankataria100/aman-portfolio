@@ -178,6 +178,6 @@ img {
 }/* MOBILE HERO GAP FIX */
 @media (max-width: 768px) {
   .hero-section {
-    padding-top: 40px !important;
+    padding-top: 10px !important;
   }
 }
