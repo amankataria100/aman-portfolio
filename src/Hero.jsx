@@ -3,16 +3,17 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section
-  style={{
-    minHeight: "100vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "140px 10% 0 10%",  // 👈 THIS FIXES IT
-    boxSizing: "border-box",
-  }}
->
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "160px 10% 60px 10%", // Fixed navbar overlap
+        boxSizing: "border-box",
+      }}
+    >
       <div
+        className="hero-container"
         style={{
           maxWidth: "1300px",
           width: "100%",
@@ -20,19 +21,19 @@ export default function Hero() {
           alignItems: "center",
           justifyContent: "space-between",
           flexWrap: "wrap",
-          gap: "40px",
+          gap: "60px",
         }}
       >
-        {/* LEFT TEXT SIDE */}
+        {/* LEFT TEXT */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          style={{ flex: 1, minWidth: "300px" }}
+          style={{ flex: 1, minWidth: "280px" }}
         >
           <h1
             style={{
-              fontSize: "clamp(40px, 5vw, 64px)",
+              fontSize: "clamp(36px, 5vw, 64px)",
               marginBottom: "20px",
               lineHeight: "1.2",
             }}
@@ -45,7 +46,7 @@ export default function Hero() {
 
           <p
             style={{
-              fontSize: "clamp(18px, 2vw, 24px)",
+              fontSize: "clamp(16px, 2vw, 22px)",
               opacity: 0.8,
               marginBottom: "30px",
             }}
@@ -72,22 +73,22 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* RIGHT IMAGE SIDE */}
+        {/* RIGHT IMAGE */}
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           style={{
-  flex: 1,
-  minWidth: "300px",
-  textAlign: "center",
-}}
+            flex: 1,
+            minWidth: "280px",
+            textAlign: "center",
+          }}
         >
           <img
             src="/images/profile.jpg"
             alt="Aman Kataria"
             style={{
-              width: "350px",
+              width: "320px",
               maxWidth: "100%",
               borderRadius: "20px",
               boxShadow: "0 20px 50px rgba(0,0,0,0.4)",
