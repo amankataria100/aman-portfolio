@@ -26,20 +26,19 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
       style={{
-  position: "fixed",
-  top: 0,
-  left: 0, gap: "18px",
-    paddingRight: "10px",
-  width: "100%",
-  height: "80px",   // restore desktop height
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  padding: "0 40px",  // restore desktop padding
-  background: "rgba(15,23,42,0.95)",
-  backdropFilter: "blur(10px)",
-  zIndex: 9999,
-}}
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "80px",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "0 30px",
+        background: "rgba(15,23,42,0.95)",
+        backdropFilter: "blur(10px)",
+        zIndex: 9999,
+      }}
     >
       {/* LOGO (only after scroll) */}
       <motion.div
@@ -53,7 +52,7 @@ export default function Navbar() {
           color: "white",
         }}
       >
-Aman
+        Aman
       </motion.div>
 
       {/* LINKS (only on first screen) */}
