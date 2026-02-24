@@ -21,9 +21,7 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
     >
       {/* Logo */}
-      <div className="logo">
-        {showLogo && "Aman"}
-      </div>
+      {showLogo && <div className="logo">Aman</div>}
 
       {/* Links */}
       {!showLogo && (
