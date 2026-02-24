@@ -51,27 +51,7 @@ nav a:hover {
   font-family: 'Cinzel Decorative', serif;
   font-size: 28px;
 }
-/* Mobile Navbar Size Fix */
-@media (max-width: 768px) {
 
-  nav {
-    padding: 10px 15px;
-  }
-
-  .logo {
-    font-size: 22px;   /* Keep Cinzel but smaller */
-  }
-
-  .navbar-links {
-    gap: 10px;         /* Reduce spacing */
-  }
-
-  .navbar-links a {
-    font-size: 12px;   /* Smaller text */
-    letter-spacing: 0.5px;
-  }
-
-}
 /* ===== HERO SECTION ===== */
 .hero {
   min-height: 100vh;
