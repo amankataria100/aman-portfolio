@@ -47,7 +47,7 @@ export default function Navbar() {
           transition: "all 0.4s ease",
         }}
       >
-        Aman Kataria
+        A
       </div>
 
       {/* NAV LINKS */}
