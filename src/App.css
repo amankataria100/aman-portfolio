@@ -28,25 +28,33 @@
     width: 80%;
     font-size: 16px;
   }
-}/* Mobile Navbar Fix */
-@media (max-width: 768px) {
-  .navbar-links {
-    font-size: 14px;
-    gap: 12px;body {
+}/* Push content below fixed navbar */
+body {
   padding-top: 70px;
-}@media (max-width: 768px) {
+}
+
+/* Mobile Navbar Fix */
+@media (max-width: 768px) {
+
   nav {
     padding: 10px 20px;
+  }
+
+  .navbar-links {
+    font-size: 14px;
+    gap: 12px;
   }
 
   nav a {
     font-size: 13px;
   }
-}
-  }
 
   .logo {
     font-size: 22px;
+  }
+
+  .hero {
+    padding-top: 110px; /* prevents "Hi" text hiding */
   }
 }
 .logo {
