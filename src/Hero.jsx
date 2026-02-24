@@ -3,15 +3,16 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "140px 10% 40px 10%", // Fixed navbar overlap
-        boxSizing: "border-box",
-      }}
-    >
+  style={{
+    minHeight: "100vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "140px 10% 40px 10%",  // Desktop spacing
+    boxSizing: "border-box",
+  }}
+  className="hero-section"
+>
       <div
         className="hero-container"
         style={{

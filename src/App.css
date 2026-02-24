@@ -175,4 +175,9 @@ img {
   section:first-of-type {
     padding-top: 100px !important;
   }
+}/* MOBILE HERO GAP FIX */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 90px !important;
+  }
 }
