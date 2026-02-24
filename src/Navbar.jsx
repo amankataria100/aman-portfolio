@@ -52,7 +52,7 @@ export default function Navbar() {
           color: "white",
         }}
       >
-        Aman Kataria
+Aman
       </motion.div>
 
       {/* LINKS (only on first screen) */}
