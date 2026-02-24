@@ -2,14 +2,15 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
-  const [showLogo, setShowLogo] = useState(false);
+  const [showLinks, setShowLinks] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
+      // Hide links after first screen
       if (window.scrollY > window.innerHeight - 100) {
-        setShowLogo(true);
+        setShowLinks(false);
       } else {
-        setShowLogo(false);
+        setShowLinks(true);
       }
     };
 
@@ -25,46 +26,45 @@ export default function Navbar() {
       style={{
         position: "fixed",
         top: 0,
+        left: 0,
         width: "100%",
-        height: "70px",
+        height: "80px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        padding: "0 40px",
-        background: "rgba(15,23,42,0.9)",
+        padding: "0 30px",
+        background: "rgba(15,23,42,0.95)",
         backdropFilter: "blur(10px)",
-        zIndex: 1000,
+        zIndex: 9999,
       }}
     >
-      {/* LOGO */}
+      {/* LOGO ALWAYS VISIBLE */}
       <div
         style={{
           fontFamily: "Cinzel Decorative, serif",
-          fontSize: "28px",
-          letterSpacing: "3px",
-          opacity: showLogo ? 1 : 0,
-          transform: showLogo ? "translateX(0)" : "translateX(-20px)",
-          transition: "all 0.4s ease",
+          fontSize: "22px",
+          letterSpacing: "2px",
+          color: "white",
         }}
       >
-        A
+        Aman Kataria
       </div>
 
-      {/* NAV LINKS */}
-      <div style={{ display: "flex", gap: "25px" }}>
-        <a href="#about" style={{ color: "white", textDecoration: "none" }}>
-          About
-        </a>
-        <a href="#skills" style={{ color: "white", textDecoration: "none" }}>
-          Skills
-        </a>
-        <a href="#projects" style={{ color: "white", textDecoration: "none" }}>
-          Projects
-        </a>
-        <a href="#contact" style={{ color: "white", textDecoration: "none" }}>
-          Contact
-        </a>
-      </div>
+      {/* LINKS ONLY ON HERO */}
+      {showLinks && (
+        <div style={{ display: "flex", gap: "20px" }}>
+          <a href="#about" style={linkStyle}>About</a>
+          <a href="#skills" style={linkStyle}>Skills</a>
+          <a href="#projects" style={linkStyle}>Projects</a>
+          <a href="#contact" style={linkStyle}>Contact</a>
+        </div>
+      )}
     </motion.nav>
   );
 }
+
+const linkStyle = {
+  color: "white",
+  textDecoration: "none",
+  fontSize: "14px",
+};
